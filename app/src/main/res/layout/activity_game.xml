@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/playerlistMargin"
+    android:orientation="vertical">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId = "ca-app-pub-5998541896858053/9960990748"
+
+        />
+
+    <TextView
+        android:id="@+id/gameHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="@string/gameHeader"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/headerSize" />
+
+    <LinearLayout
+        android:id="@+id/playerNameListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textAlignment="gravity" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playerScoreListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/currentScore"
+            android:textAlignment="gravity" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorAccent"
+        android:focusable="false" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/scoreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/newRoundButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/squareButton"
+                android:layout_margin="@dimen/playerlistMargin"
+                android:onClick="nextRound"
+                android:text="@string/addRoundButton"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="newGame"
+        android:text="@string/newGameButton"
+        android:textAllCaps="true"
+        android:textSize="@dimen/buttonText" />
+
+</LinearLayout>

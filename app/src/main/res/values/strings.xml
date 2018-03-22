@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Kingen Puntenteller</string>
+    <string name="newGameButton">Start een nieuw spel</string>
+    <string name="howToButton">Dit doet nog niks</string>
+    <string name="headerText">Kingen Puntenteller</string>
+    <string name="playerlistHeader">Spelers instellen</string>
+    <string name="startGameButton">Start spel</string>
+    <string name="playerHint">Geef een naam in</string>
+    <string name="gameHeader">We spelen een spel vanavond!</string>
+    <string name="currentScore"></string>
+    <string name="endGameButton">Einde van het spel</string>
+    <string name="addRoundButton">Volgende ronde</string>
+    <string name="addPlayer">Speler toevoegen</string>
+    <string name="enterNameToast">Geef een naam in</string>
+    <string name="namePlayersToast">Geef elke speler een naam</string>
+    <string name="roundText">R %d</string>
+    <string name="round1Header">Ronde 1: Minste slagen</string>
+    <string name="round2Header">Ronde 2: Minste harten</string>
+    <string name="round3Header">Ronde 3: Geen heren en boeren</string>
+    <string name="round4Header">Ronde 4: Geen dames</string>
+    <string name="round5Header">Ronde 5: Geen hartenheer</string>
+    <string name="round6Header">Ronde 6: Geen 7e en 13e slag</string>
+    <string name="round7Header">Ronde 7: Troeven (1)</string>
+    <string name="round8Header">Ronde 8: Troeven (2)</string>
+    <string name="round9Header">Ronde 9: Troeven (3)</string>
+    <string name="round10Header">Ronde 10: Troeven (4)</string>
+    <string name="round11Header">Ronde 11: Troeven (5)</string>
+    <string name="endGameHeader">Einde van het spel</string>
+
+
+</resources>
